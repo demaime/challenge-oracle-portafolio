@@ -1,22 +1,63 @@
+:root {
+  --primary-color: #7c77c9;
+  --secondary-color: #e5e4f5;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+a:link {
+  text-decoration: none;
+  color: #e5e4f5;
+  transition-duration: 500ms;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #e5e4f5;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+a:active {
+  text-decoration: none;
+}
+
 html {
-  font-family: monospace;
+  font-family: "Segoe UI";
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: lightgrey;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  width: 90%;
+  width: 100%;
 }
 
 section {
-  margin: 30px 0;
+  margin: 2% 0;
 }
 nav {
   margin: 10px 0;
+  padding: 0 2%;
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
@@ -39,21 +80,30 @@ nav {
   margin: 0 10px;
 }
 
-.section-presentation {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.container {
+  padding: 5%;
+}
+
+.presentation-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-me-container {
+  background-color: var(--secondary-color);
 }
 
 .profile-ph-containter {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 #profile-photo {
-  height: 200px;
+  height: 220px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 30%;
+  opacity: 75%;
 }
 
 .social-media-list {
@@ -61,9 +111,99 @@ nav {
   padding: 0;
   margin: 20px 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+}
+
+.social-media-list li {
+  display: flex;
 }
 
 .about-me-text {
   font-size: 18px;
+}
+
+.skills-and-hobbies-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-and-hobbies-list li {
+  height: 100px;
+  width: 150px;
+  margin: 2%;
+  box-shadow: 2px 2px 0px 0px var(--secondary-color);
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+
+.skills-and-hobbies-list p {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.carousel {
+  margin: 0 auto;
+  display: flex;
+}
+
+.proyects-container {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+.btn-carousel {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #7c77c9;
+  color: white;
+  opacity: 75%;
+}
+
+.proyects-image {
+  /* 1532*934 */
+  width: 100%;
+  max-height: 934px;
+}
+
+.proyects-info {
+  background-color: #7c77c9;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  opacity: 90%;
+  color: white;
+  bottom: 33.3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 500ms;
+}
+
+.proyects-info:hover {
+  opacity: 100%;
+}
+
+.technologies-proyect {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
 }

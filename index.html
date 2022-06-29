@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demian Aime</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/12839909dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="menu">
@@ -20,38 +24,139 @@
     </nav>
     <main>
       <section class="section-presentation">
-        <div>
-          <h1 class="presentation-title">
-            ¡Hola! Mi nombre es Demian y soy Desarrollador Fron-End. O al menos
-            eso intento...
-          </h1>
-          <p class="presentation-text">
-            Emprendí este camino a finales del 2020, dedicando cada segundo
-            posible. Hoy siento que estoy cada vez más cerca de mi objetivo.
-          </p>
-          <ul class="social-media-list">
-            <li>🔗 GitHub</li>
-            <li>🔗 LinkedIn</li>
-            <li>🔗 Instagram</li>
-            <li>🔗 Curriculum(PDF)</li>
-            <!-- hay que poner un boton para descargar el cv en pdf -->
-          </ul>
-        </div>
-        <div class="profile-ph-containter">
-          <img id="profile-photo" src="./profile.jpg" alt="" />
+        <div class="container presentation-container">
+          <div>
+            <h1 class="presentation-title primary-color">
+              ¡Hola! Mi nombre es Demian y soy Desarrollador Fron-End. O al
+              menos eso intento...
+            </h1>
+            <p class="presentation-text">
+              Nací en Argentina en 1992, y 14 años después tuve mi primer
+              computadora. Entonces nació mi pasión por la tecnología, que hoy
+              encuentra su punto de conexión con el ámbito laboral, además de
+              ser mi herramienta en todos mis pasatiempos.
+            </p>
+            <p class="presentation-text">
+              No dejes de visitar mis redes, ya sea para conocerme mejor o para
+              ver en mayor detalle mi trabajo
+            </p>
+          </div>
+          <div class="profile-ph-containter">
+            <img id="profile-photo" src="./imgs/profile.png" alt="" />
+            <ul class="social-media-list">
+              <li><span class="primary-color">🔗</span>GitHub</li>
+              <li><span class="primary-color">🔗</span> LinkedIn</li>
+              <li><span class="primary-color">🔗</span> Instagram</li>
+              <li><span class="primary-color">🔗</span> Curriculum(PDF)</li>
+              <!-- hay que poner un boton para descargar el cv en pdf -->
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section-about-me">
-        <p class="about-me-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
-          soluta doloribus reprehenderit dolores odio distinctio officiis ut?
-          Quam ad quasi minima error harum nam nihil exercitationem voluptates
-          rerum rem.
-        </p>
+        <div class="container about-me-container">
+          <h3 class="primary-color">Sobre mí</h3>
+          <p class="about-me-text">
+            Soy una persona metódica y organizada, que un día decidió
+            <em>pegar el volantazo</em> dejando un trabajo cómodo y estable para
+            dedicarse a lo que realmente le gusta Emprendí este camino a finales
+            del 2020, dedicando cada segundo posible. Hoy siento que estoy cada
+            vez más cerca de mi objetivo.
+          </p>
+          <p class="about-me-text">
+            En este portfolio se muestra un poco de mi camino y mi experiencia
+            en el rubro, habiendo ya dado mis primeros pasos con proyectos
+            freelance. Mi realidad no me permite dedicar el 100% de mi jornada
+            laboral a esto, pero tengo la certeza que mi progreso se verá
+            potenciado de manera exponencial cuando esto suceda. Se que falta
+            poco...
+          </p>
+        </div>
       </section>
-      <section class="section-hobbies"></section>
-      <section class="section-courses"></section>
-      <section class="section-dev-exp"></section>
+      <section class="section-hobbies">
+        <div class="container">
+          <h3 class="primary-color">Skills</h3>
+          <ul class="skills-and-hobbies-list">
+            <li>
+              <i class="fa-brands fa-html5 fa-2xl"></i>
+              <p>HTML</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3-alt fa-2xl"></i>
+              <p>CSS</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-js-square fa-2xl"></i>
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-react fa-2xl"></i>
+              <p>React</p>
+            </li>
+          </ul>
+          <h3 class="primary-color">Hobbies</h3>
+          <ul class="skills-and-hobbies-list">
+            <li>
+              <i class="fa-solid fa-gamepad fa-2xl"></i>
+              <p>Gaming</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-guitar fa-2xl"></i>
+              <p>Guitar</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-microphone-lines fa-2xl"></i>
+              <p>Freestyle</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-file-pen fa-2xl"></i>
+              <p>Writting</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-courses">
+        <div class="container">
+          <h3 class="primary-color">Courses</h3>
+        </div>
+      </section>
+      <section class="section-dev-exp">
+        <div class="container">
+          <h3 class="primary-color">Proyectos</h3>
+          <div class="carousel">
+            <button class="btn-carousel">◄</button>
+            <div class="proyects-container">
+              <img class="proyects-image" src="./imgs/0.png" alt="" />
+              <div class="proyects-info">
+                <h1>MicroImplant</h1>
+                <h3>
+                  <em>
+                    Desarrollo completo de sitio para empresa dedicada al
+                    comercio de prótesis traumatológicas
+                  </em>
+                </h3>
+
+                <a href="http://www.microimplant.com.ar" target="”_blank”">
+                  <h3>Visitar sitio</h3></a
+                >
+
+                <ul class="technologies-proyect">
+                  <li>
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-js-square fa-2xl"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="btn-carousel">►</button>
+          </div>
+        </div>
+      </section>
       <section class="section-contact"></section>
     </main>
   </body>
