@@ -169,30 +169,32 @@
               placeholder="Nombre"
               class="input-contact"
               id="input-name"
+              required
+              maxlength="50"
             />
             <input
               type="email"
               placeholder="E-mail"
               class="input-contact"
               id="input-mail"
+              required
+
             />
             <input
               type="text"
               placeholder="Asunto"
               class="input-contact"
               id="input-subject"
+              required
+              maxlength="50"
             />
-            <input
-              type="text"
-              placeholder="Mensaje"
-              class="input-contact"
-              id="input-msg"
-            />
-            <button class="btn-contact">Enviar mensaje</button>
+            <textarea class="input-contact" cols="30" rows="10" maxlength="300" placeholder="Mensaje" id="input-msg"></textarea>
+            <button type="submit" class="btn-contact">Enviar mensaje</button>
           </form>
         </div>
       </section>
     </main>
   </body>
   <footer></footer>
+  <script src="./script.js"></script>
 </html>

@@ -238,3 +238,8 @@ i {
   padding: 2%;
   border-radius: 5px;
 }
+
+#input-msg {
+  resize: none;
+  border: solid 2px black;
+}
