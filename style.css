@@ -22,12 +22,12 @@
 a:link {
   text-decoration: none;
   transition-duration: 500ms;
-  color: var(--primary-color);
+  color: black;
 }
 
 a:visited {
   text-decoration: none;
-  color: var(--primary-color);
+  color: black;
 }
 
 a:hover {
@@ -85,7 +85,7 @@ nav {
 }
 
 .container {
-  padding: 5%;
+  padding: 1% 5% 5%;
 }
 
 .presentation-container {
@@ -213,6 +213,38 @@ i {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-container {
+  display: flex;
+  padding: 3%;
+}
+
+.project-image-container {
+  width: 70%;
+}
+
+.project-text-container {
+  text-align: center;
+  width: 30%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 95%;
+}
+
+.all-proyects {
+  display: flex;
+  margin: 5% auto;
 }
 
 #section-contact {
