@@ -181,36 +181,38 @@ i {
   opacity: 75%;
 }
 
-.proyects-image {
-  /* tamaño que tienen que tener las img: 1532*934 */
-  width: 100%;
-  max-height: 934px;
-}
-
-.proyects-info {
-  background-color: #7c77c9;
-  width: 100%;
-  height: 30%;
-  position: absolute;
-  opacity: 90%;
-  color: white;
-  bottom: 33.3%;
+.course {
+  background-color: var(--secondary-color);
   display: flex;
-  align-items: center;
   flex-direction: column;
-  transition-duration: 500ms;
+  justify-content: center;
+  align-items: center;
 }
 
-.proyects-info:hover {
-  opacity: 100%;
+.course-title {
+  font-size: 5vw;
+  margin: 10px 0;
 }
 
-.technologies-proyect {
+.course-techs {
+  font-size: 3vw;
+  margin: 20px 0;
+}
+
+.course img {
+  max-width: 75%;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 0px;
+}
+
+.techs-list {
+  width: 50%;
   list-style-type: none;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 25%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #section-contact {
